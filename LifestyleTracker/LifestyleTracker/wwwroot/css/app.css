@@ -1,0 +1,148 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.top-logo{
+    height: 90px;
+    width: 160px;
+}
+
+body{
+    padding-top: 80px;
+}
+
+.navbar{
+    padding: 20px;
+    -webkit-transition: all 0.5s;
+}
+
+.nav-link{
+    color: #333;
+}
+
+.nav-bottom {
+    padding: 0px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    background-color: transparent !important;
+}
+
+.return-to-top {
+    border-radius: 4px;
+    background-color: #d3d3d3;
+    border: none;
+    color: #000;
+    text-align: center;
+    font-size: 10px;
+    padding: 5px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.return-to-top span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.return-to-top span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -10px;
+    transition: 0.5s;
+}
+
+.return-to-top:hover span {
+    padding-right: 10px;
+}
+
+.return-to-top:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.cbp-af-header-shrink{
+    padding: 5px;
+    opacity: 0.9;
+}
+
+.row.responsive-img{
+    display: inline-block;
+}
+
+.container-fluid{
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-fluid { 
+    min-width: 100%;
+}
+
+.container-fluid {
+    padding: 0px 0px;
+}
+
+.jumbotron.jumbotron-fluid{
+    margin-bottom: 0px;
+}
+
+@media (max-width: 400px){
+    .navbar-light .navbar-brand {
+        color: transparent;
+        font-size: 0;
+    }
+}
+
+#jumbotron-footer{
+    background-color: #333;
+    color: rgb(122, 122, 122);
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.gallery-padding{
+    box-sizing:content-box;
+    padding: 50px;
+    background-color: transparent;
+}
+
+.gallery-padding {
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+    box-sizing: border-box;
+    padding: 50px;
+    -webkit-transition: all 0.5s;
+    position: relative;
+}
+
+.gallery-padding:hover {
+    filter: none; /* IE6-9 */
+    -webkit-filter: grayscale(0); /* Google Chrome, Safari 6+ & Opera 15+ */
+    padding: 0px;
+    padding: 10px;
+    -webkit-transition: all 0.5s;
+}
+
+.img-gallery {
+    box-shadow: 0 10px 6px -6px #777;
+}
+
+.footer-text {
+    cursor: default;
+}
+
+.btn-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
