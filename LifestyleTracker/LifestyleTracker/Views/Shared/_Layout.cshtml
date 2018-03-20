@@ -8,13 +8,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
+    <!-- Load CSS Files -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/app.css">
 </head>
 
 <body>
-
     <!-- Nav Bar -->
     <header class="container-fluid" class="Top">
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top cbp-af-header">
@@ -27,13 +26,15 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto"></ul>
+                <!-- Nav Bar Sections -->
                 <a class="nav-link" href="#AboutUs" id="AboutUsButton">Sleep</a>
                 <a class="nav-link" href="#JoinUs" id="JoinUsButton">Fitness</a>
                 <a class="nav-link" href="#Gallery" id="GalleryButton">About</a>
             </div>
         </nav>
     </header>
-
+    
+    <!-- Page Contents -->
     <div class="container body-content">
         @RenderBody()
         <hr />
@@ -41,7 +42,8 @@
             <p>&copy; 2018 - LifestyleTracker</p>
         </footer>
     </div>
-
+    
+    <!-- Scripts -->
     <environment include="Development">
         <script src="js/jquery-3.2.1.slim.min.js"></script>
         <script src="js/popper.min.js"></script>
@@ -49,22 +51,6 @@
         <script src="js/classie.js"></script>
         <script src="js/cbpAnimatedHeader.min.js"></script>
     </environment>
-    <environment exclude="Development">
-        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
-                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
-                asp-fallback-test="window.jQuery"
-                crossorigin="anonymous"
-                integrity="sha384-K+ctZQ+LL8q6tP7I94W+qzQsfRV2a+AfHIi9k8z8l9ggpc8X+Ytst4yBo/hH+8Fk">
-        </script>
-        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
-                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
-                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
-                crossorigin="anonymous"
-                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
-        </script>
 
-    </environment>
-
-    @RenderSection("Scripts", required: false)
 </body>
 </html>
